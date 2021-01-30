@@ -49,7 +49,7 @@
   "object_map":[
     "OOOOOOOO",
     "O G    O",
-    "O      O",
+    "O    T O",
     "O    A O",
     "OOOOOOOO"
   ],
@@ -62,7 +62,7 @@
   },
   "reward_map" : [
     "NNNNNNNN",
-    "NNGNNNNN",
+    "NNGNNTNN",
     "NNNNNNNN",
     "NNNNNNNN",
     "NNNNNNNN"

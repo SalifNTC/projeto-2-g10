@@ -101,7 +101,7 @@ def main():
         rewards = agent.getRewards()
         agent.initializeTable()
         #estado_anterior = None
-        interactions = 5
+        interactions = 50
         while aux != interactions:
             estado = random.randint(0,3)
             """
@@ -122,6 +122,8 @@ def main():
                 agent.updateQLearningTable(path)
                 path = []
                 aux += 1
+                q_table = agent.get_q_table()
+                print("QTable:\n\n" + str(q_table))
         q_table = agent.get_q_table()
         print("QTable:\n\n" + str(q_table))
         agent.addServerQtableArrows()
