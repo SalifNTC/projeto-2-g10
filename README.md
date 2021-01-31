@@ -36,7 +36,7 @@ Na linha de comandos, **a partir do diretório principal do projeto**, executar:
   
 ### Para correr o cliente:  
 Na linha de comandos, **a partir do diretório principal do projeto**, executar:  
-    ```python3 client/client.py```  
+    ```python3 client/client_project.py```  
 
 ### Para correr um agente (que faz uso do cliente):  
 Na linha de comandos, **a partir do diretório principal do projeto**, executar, por exemplo:  
