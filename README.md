@@ -2,7 +2,15 @@
 ## Sobre o projeto:
 O projeto Agent0_minotauro permite explorar a interação entre um agente e um ambiente.
 O ambiente consiste num tabuleiro retangular de casas quadradas, que podem conter obstáculos, perigos ou objetivos. Para se movimentar neste ambiente, o agente pode deslocar-se em frente ou mudar de direção. O agente, dependendo da sua capacidade, pode também inspecionar o tabuleiro e as suas casas.
-O agente pode usar diversos algoritmos para chegar ao seu objetivo. Para os visualizar, é possível marcar as casas com várias cores.
+O agente pode usar diversos algoritmos para chegar ao seu objetivo, neste projeto foi utilizado o algoritmo **Q-Learning**. Para os visualizar, é possível marcar as casas com várias cores.
+
+## Descrição do Algoritmo 
+
+O algoritmo **Q-Learning** é um algoritmo de aprendizagem por reforço, com uma política que procura encontrar a melhor ação a ser executada no estado atual. O Q-Learning é um algoritmo off-policy, podendo assim atualizar as funções de valor estimado usando ações que ainda não foram experimentadas. O Q-Learning aprende a política ideal, mesmo quando as ações são selecionadas de acordo com uma política mais exploratória ou até aleatória.  
+
+O “Q” em que Q-Learning representa o quão útil uma determinada ação é para ganhar alguma recompensa. 
+
+Quando o algoritmo é utilizado é criada uma tabela designada por Q-table que obedece o seguinte formato: [estado, ação]. Os valores são inicializados a zero. A atualização desses valores-q sempre que ocorre um episódio. Esta tabela torna-se uma referência para o agente selecionar a melhor ação com base no valor q. 
   
 A interação entre o agente e o ambiente é comandada através de um cliente e acontece no servidor.
 
@@ -44,5 +52,6 @@ A configuração do ambiente e do agente é feita no ficheiro **config.json**, a
 A interface gráfica do servidor bloqueia enquanto espera pela conexão do cliente. No Windows, por exemplo, é necessário fechar o programa à força caso se queira terminá-lo antes de conectar o cliente.
 
 ## Contribuidores:
- - Gil Silva
- - José Cascalho
+ - Salif Faustino
+ - Beatriz Silva
+ - Pedro Sousa
