@@ -82,7 +82,7 @@ class Agent():
                     self.qLearningTable[(x,y)] = [0,0,0,0]
         
     def addServerQtableArrows(self):
-        lista_aux = [(2,1),(5,3)]
+        lista_aux = [(2,1),(5,3),(5,1)]
         for x, y in self.qLearningTable:
             if (x,y) not in lista_aux:
                 aux = self.qLearningTable[(x,y)].index(max(self.qLearningTable[(x,y)]))
